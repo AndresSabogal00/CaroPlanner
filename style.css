@@ -1,0 +1,92 @@
+/* Paleta de colores */
+:root {
+    --pink: #ffb6c1;
+    --purple: #dda0dd;
+    --white: #fff;
+    --text-dark: #333;
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, var(--pink), var(--purple));
+    color: var(--text-dark);
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Secciones */
+.task-section, .quote-section, .challenge-section {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+    color: var(--purple);
+    font-size: 24px;
+}
+
+button {
+    background: var(--purple);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: var(--pink);
+}
+/* Sección Semanal */
+.week-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.day {
+    background: var(--purple);
+    color: var(--white);
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    text-align: center;
+    width: 80px;
+}
+
+.day:hover {
+    background: var(--pink);
+}
+.surprise-section {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.hidden {
+    display: none;
+}
+
+#character-img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+

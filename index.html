@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Planificador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌸 Mi Planificador 🌸</h1>
+        
+        <!-- Sección de Tareas -->
+        <div class="task-section">
+            <h2>📅 Tareas del Día</h2>
+            <ul id="task-list"></ul>
+            <input type="text" id="task-input" placeholder="Nueva tarea...">
+            <button onclick="addTask()">Agregar</button>
+        </div>
+
+        <!-- Sección de Planeación Semanal -->
+<div class="week-section">
+    <h2>📆 Vista Semanal</h2>
+    <div class="week-container">
+        <div class="day" onclick="openTaskInput('lunes')">Lunes</div>
+        <div class="day" onclick="openTaskInput('martes')">Martes</div>
+        <div class="day" onclick="openTaskInput('miércoles')">Miércoles</div>
+        <div class="day" onclick="openTaskInput('jueves')">Jueves</div>
+        <div class="day" onclick="openTaskInput('viernes')">Viernes</div>
+        <div class="day" onclick="openTaskInput('sábado')">Sábado</div>
+        <div class="day" onclick="openTaskInput('domingo')">Domingo</div>
+    </div>
+    <ul id="weekly-tasks"></ul>
+</div>  
+
+        <!-- Sección de Frases Motivacionales -->
+        <div class="quote-section">
+            <h2>✨ Frase del Día ✨</h2>
+            <p id="quote-display">Presiona el botón para recibir motivación</p>
+            <button onclick="showRandomQuote()">Nueva Frase</button>
+        </div>
+
+        <!-- Sección de Retos de Salud Mental -->
+        <div class="challenge-section">
+            <h2>💖 Reto del Día 💖</h2>
+            <p id="challenge-display">Haz clic para un reto saludable</p>
+            <button onclick="showRandomChallenge()">Nuevo Reto</button>
+        </div>
+    </div>
+
+    <!-- Modo Sorpresa -->
+<div class="surprise-section">
+    <h2>🌟 Sorpresa del Día 🌟</h2>
+    <img id="character-img" src="" alt="Sorpresa" class="hidden">
+    <p id="character-phrase"></p>
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
